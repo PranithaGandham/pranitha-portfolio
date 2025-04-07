@@ -3,6 +3,7 @@ import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
+import image from "../assets/img/image.png"
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -28,19 +29,14 @@ export const Projects = () => {
     },
  
   ];
-  // const projects2 = [
-  //   {
-  //     title: "e-Commerce",
-  //     description: "Design & Development",
-  //     imgUrl: projImg1,
-  //   },
-  //   {
-  //     title: "",
-  //     description: "ML & OpenCv",
-  //     imgUrl: projImg1,
-  //   },
+  const projects2 = [
+    {
+      title: "Blog",
+      description: "Deployed Using Vercel and Amazon AWS",
+      imgUrl: image,
+    },
     
-  // ];
+  ];
 
   return (
     <section className="project" id="projects">
@@ -80,7 +76,7 @@ export const Projects = () => {
                       </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="second">
-                    {/* <Row>
+                    <Row>
                         {
                           projects2.map((project, index) => {
                             return (
@@ -91,7 +87,7 @@ export const Projects = () => {
                             )
                           })
                         }
-                      </Row> */}
+                      </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
                       <p>"Planning to build a feature-rich blogging website focused on seamless content management and user engagement. It will include secure authentication, a powerful backend, and an intuitive user experience."</p>
